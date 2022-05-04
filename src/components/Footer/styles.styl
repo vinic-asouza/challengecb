@@ -1,0 +1,132 @@
+.footer
+    background: #000000;
+
+    &__container
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 991px)
+            flex-direction: column;
+            padding: 25px 15px;
+
+    &__box
+        flex: 0 100%;
+
+    &__contact
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+
+        @media (max-width: 991px)
+            padding: 30px 0;
+
+    &__partners
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        @media (max-width: 991px)
+            justify-content: center;
+
+    &__title
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin-bottom: 37px;
+        position: relative;
+
+        &:after
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 45px;
+            height: 5px;
+            background: #fff;
+
+    &__text
+        display: block;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 12px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+
+    &__link
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+
+        &:hover
+            color: #f8475f;
+
+    &__button
+        width: 195px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 5px;
+        gap: 15px;
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+
+        &:hover
+            background: #f8475f;
+
+            p
+                color: #fff;
+
+            svg
+                fill: #fff;
+
+        svg
+            fill: #000;
+            transition: all 0.2s ease-out;
+
+        p
+            max-width: 120px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 100%;
+            color: #000000;
+            transition: all 0.2s ease-out;
+
+    &__partner
+        font-weight: 400;
+        font-size: 10.6017px;
+        line-height: 14px;
+        color: #FFFFFF;
+        text-decoration: none;
+
+        &:last-child
+            margin-left: 30px;
+
+    &__developer
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid #282828;
+
+        p
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 100%;
+            color: #fff;
+            padding: 20px 0;
+
+        a
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 100%;
+            color: #fff;
+            transition: all 0.2s ease-out;
+
+            &:hover
+                color: #f8475f;

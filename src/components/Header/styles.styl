@@ -1,0 +1,130 @@
+.header
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0px 5px 10px #0000000d;
+
+    &__container
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 991px)
+            position: relative;
+            padding: 0 20px;
+
+    &__menu
+        svg
+            fill: #000;
+
+        @media (min-width: 992px)
+            display: none;
+
+    &__logo
+        @media (min-width: 992px)
+            margin-right: 130px;
+
+        svg
+            fill: #000;
+
+    &__search
+        flex: 0 100%;
+        margin-right: 45px;
+
+        @media (max-width: 991px)
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px 0;
+            margin: 0;
+
+        .search
+            position: relative;
+
+            @media (max-width: 991px)
+                width: 90%;
+                margin: 0 auto;
+
+            &__input
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #7a7a7a;
+                padding: 3px 0;
+
+            &__button
+                cursor: pointer;
+                position: absolute;
+                right: 0px;
+
+                &:hover
+                    svg
+                        fill: #F8475F;
+
+                svg
+                    fill: #000;
+                    transition: all 0.2s ease-out;
+
+    &__account
+        margin-right: 10px;
+
+        @media (max-width: 991px)
+            display: none;
+
+        .account
+            display: flex;
+            white-space: nowrap;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+
+            &:hover
+                svg
+                    fill: #F8475F;
+
+                span
+                    color: #F8475F;
+
+            &__label
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: #7A7A7A;
+                transition: all 0.2s ease-out;
+
+            svg
+                fill: #000;
+                transition: all 0.2s ease-out;
+
+    &__cart
+        margin-left: 10px;
+
+        .cart
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover
+                svg
+                    fill: #F8475F;
+
+            svg
+                fill: #000;
+                transition: all 0.2s ease-out;
+
+            &__qnt
+                width: 14px;
+                height: 14px;
+                background: #F8475F;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 14px;
+                color: #FFFFFF;
+                border-radius: 50%;
+                text-align: center;
+                margin-left: 5px;

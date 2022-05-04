@@ -1,0 +1,183 @@
+.showcase
+    margin-bottom: 70px;
+
+    &__container
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+
+    &__title
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000;
+        position: relative;
+        margin-bottom: 50px;
+
+        &:after
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 65px;
+            height: 5px;
+            background: #C0C0C0;
+
+    &__item
+        max-width: 216px;
+        display: block !important;
+        margin: 0 auto;
+        cursor: pointer;
+
+        &:hover
+            .showcase__info
+                background: #E6E8EA;
+
+            .showcase__buy
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+
+            .showcase__figure img
+                transform: scale(1.1);
+
+    &__info
+        text-align: center;
+        padding-bottom: 15px;
+        transition: all 0.3s ease-out;
+
+        @media (max-width: 991px)
+            min-height: 175px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+    &__figure
+        overflow: hidden;
+        position: relative;
+
+        img
+            width: 100%;
+            transition: all 0.3s ease-out;
+
+    &__seal
+        position: absolute;
+        z-index: 1;
+        right: 0;
+
+        p
+            font-size: 16px;
+            font-weight: 900;
+            line-height: 22px;
+            color: #fff;
+            position: absolute;
+            z-index: 2;
+            top: 15px;
+            right: 10px;
+
+        &:after
+            content: '';
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: 0px solid transparent;
+            border-bottom: 74px solid transparent;
+            border-right: 82px solid #F8475F;
+
+    &__name
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #7A7A7A;
+        padding: 6px 0 0 0;
+
+    &__rating
+        text-align: center;
+
+    &__prices
+        min-height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-bottom: 8px;
+
+        &--promotion
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #7A7A7A;
+
+        &--regular
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #000000;
+
+        &--installments
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 15px;
+            text-align: center;
+            color: #7A7A7A;
+
+    &__buy
+        font-family: 'Nunito', sans-serif;
+        width: 125px;
+        background: #000000;
+        border-radius: 5px;
+        height: 32px;
+        color: #fff;
+        transition: all 0.3s ease-out;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+
+        @media (max-width: 991px)
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+
+        &:hover
+            background: #f8475f;
+
+    .slick-next, .slick-prev
+        &:before
+            opacity: 1;
+            color: #000;
+            font-size: 30px;
+            transition: all 0.2s ease-out;
+
+        &:hover
+            &:before
+                color: #F8475F;
+
+    .slick-dots
+
+        li
+            width: 10px;
+            height: 10px;
+            margin: 0px 6px;
+            padding: 0;
+
+            &.slick-active
+                button
+                    &:before
+                        color: #F8475F;
+                        opacity: 1;
+
+        button
+            width: 10px;
+            height: 10px;
+
+            &:before
+                width: 10px;
+                height: 10px;
+                color: #BDBDBD;
+                font-size: 10px;
+                opacity: 1;
